@@ -1,1 +1,31 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Monsieur+La+Doulaise&family=Passion+One:wght@400;700;900&family=Playpen+Sans+Thai:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+  --cor1: #BF0C00
+  --cor2: #7F0800
+  --cor3: #FF1000
+  --cor4: #400400
+  --cor5: #E50E00
+*/
+
+:root{
+  --cor1: #BF0C00;
+  --cor2: #7F0800;
+  --cor3: #FF1000;
+  --cor4: #400400;
+  --cor5: #E50E00;
+  --font: "Monsieur La Doulaise", cursive;
+}
+
+body{
+     font-family: Arial, Helvetica, sans-serif;
+}
+
