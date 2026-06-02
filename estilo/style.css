@@ -50,7 +50,6 @@ header h1{
 }
 
 header nav{
-  
   padding-top: 20px;
   display: none;
 }
@@ -73,6 +72,13 @@ header nav{
 
 nav ul{
   list-style-type: none;
+  background-color: #400400;
+  margin-left: -240px;
+  margin-right: -240px;
+  margin-top: -15px;
+  margin-bottom: -5px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
 }
 
 header a{
@@ -81,12 +87,13 @@ header a{
     text-decoration: none;
     color: white;
     text-align: center;
-    border-top: ;
+
 }
 header a:hover{
     background-color: var(--cor3);
     color: var(--cor4);
     border-radius: 8px;
-    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+    transition: background-color, 0.5s;
 }
 
