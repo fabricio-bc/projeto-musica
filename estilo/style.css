@@ -69,14 +69,9 @@ header nav{
     color: var(--cor4);
     border-radius: 8px;
 }
-
 nav ul{
   list-style-type: none;
   background-color: #400400;
-  margin-left: -240px;
-  margin-right: -240px;
-  margin-top: -15px;
-  margin-bottom: -5px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
 }
