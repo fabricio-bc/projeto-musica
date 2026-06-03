@@ -102,24 +102,28 @@ main{
 }
 section h2{
   padding: 10px;
-  background-color: #BF0C00;
-  color: #400400;
+  background-color: var(--cor5);
+  color:var(--cor4);
   font-family: var(--font);
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
   text-align: center;
 
 }
 
 section h3{
   padding: 10px;
-  color: #E50E00;
+  color: var(--cor5);
   font-family: var(--font);
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.288);
+
 }
 
 section h4{
   padding: 10px;
-  color: #7F0800;
+  color: var(--cor2);
   font-family: var(--font);
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.288);
 }
 
 section p {
