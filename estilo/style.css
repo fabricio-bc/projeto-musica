@@ -26,13 +26,14 @@
 }
 
 body{
-     font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
   background-color: var(--cor5);
   padding: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
+  
 
   display: flex;
   flex-direction: column;
@@ -56,7 +57,7 @@ header nav{
 
 #burguer{
    
-    align-self: flex-start;
+    align-self: flex-end;
     color: white;
     display: block;
     text-align: center;
@@ -69,36 +70,14 @@ header nav{
     color: var(--cor4);
     border-radius: 8px;
 }
-
-
-
-nav ul{
+header ul{
   list-style-type: none;
   background-color: #400400;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
-
-  display: grid;
-  grid-template-columns: 200px 2fr 200px;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
-#caixa1 {
-  grid-column: 2/3 ;
-  grid-row: 1/2 ;
-}
-
-#caixa2{
- grid-column: 2/3;
- grid-row: 2/3;
-}
-
-#caixa3{
- grid-column: 2/3;
- grid-row: 3/4;
-}
-
-nav a{
+header a{
     display:block;
     padding: 10px;
     text-decoration: none;
@@ -112,7 +91,47 @@ header a:hover{
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
     transition: background-color, 0.5s;
+}
 
+main{
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+  font-size: 1.2em;
+}
+section h2{
+  padding: 10px;
+  background-color: #BF0C00;
+  color: #400400;
+  font-family: var(--font);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
+  text-align: center;
 
 }
 
+section h3{
+  padding: 10px;
+  color: #E50E00;
+  font-family: var(--font);
+}
+
+section h4{
+  padding: 10px;
+  color: #7F0800;
+  font-family: var(--font);
+}
+
+section p {
+  padding: 20px;
+  text-align: justify;
+}
+
+.lista{
+  padding: 10px;
+}
+
+.lista li::before{
+  content: "♫";
+  padding: 10px;
+} 
