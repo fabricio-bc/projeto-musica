@@ -33,7 +33,6 @@ header{
   background-color: var(--cor5);
   padding: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
-  
 
   display: flex;
   flex-direction: column;
@@ -98,9 +97,9 @@ main{
   margin-bottom: 30px;
   margin-top: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
-  font-size: 1.2em;
 }
-section h2{
+
+main h2{
   padding: 10px;
   background-color: var(--cor5);
   color:var(--cor4);
@@ -108,34 +107,87 @@ section h2{
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
   text-align: center;
-
+  font-size: 1.4em;
 }
 
-section h3{
+main h3{
   padding: 10px;
   color: var(--cor5);
   font-family: var(--font);
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.288);
+  font-size: 1.3em;
 
 }
 
-section h4{
+main h4{
   padding: 10px;
   color: var(--cor2);
   font-family: var(--font);
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.288);
+  font-size: 1.2em;
 }
 
-section p {
+main p {
   padding: 20px;
+  margin: 15px 0px 15px 0px;
   text-align: justify;
+  line-height: 1.8em;
+  font-size: 1.1em;
 }
 
 .lista{
   padding: 10px;
+  font-size: 1.1em;
 }
 
 .lista li::before{
   content: "♫";
   padding: 10px;
 } 
+
+aside{
+  text-align: center;
+}
+aside h4{
+  background-color: var(--cor2);
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+}
+
+aside ul{
+  background-color: var(--cor5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+}
+
+aside li {
+  padding: 7px;
+}
+
+
+aside a{
+  text-decoration: none;
+  color: var(--cor4);
+  font-weight: bold;
+  display: block;
+}
+
+aside a:hover{
+  background-color: var(--cor1);
+  padding: 7px;
+  border-radius: 5px;
+  transition: background-color, 0.5s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+}
+
+footer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+footer a{
+  padding: 6px;
+  margin-bottom: 10px;
+}
