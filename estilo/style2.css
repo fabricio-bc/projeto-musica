@@ -1,6 +1,6 @@
-@charset "UTF-8";
 
-@media screen and (min-width:200px) and (max-width: 600px){
+@media screen and (min-width: 992px){
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,13 +9,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Monsieur+La+Doulaise&family=Passion+One:wght@400;700;900&family=Playpen+Sans+Thai:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* 
-  --cor1: #BF0C00
-  --cor2: #7F0800
-  --cor3: #FF1000
-  --cor4: #400400
-  --cor5: #E50E00
-*/
 
 :root{
   --cor1: #BF0C00;
@@ -26,13 +19,12 @@
   --font: "Monsieur La Doulaise", cursive;
 }
 
-
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
-  background-color: var(--cor5);
+  background-image: linear-gradient(180deg, #E50E00, #7F0800);
   padding: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
   margin-bottom: 20px;
@@ -40,8 +32,8 @@ header{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
 }
 
@@ -49,43 +41,27 @@ header h1{
   font-family: var(--font);
   color:var(--cor4);
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.212);
-  text-align: center;
+  align-self: center;
   padding-bottom: 20px;
 }
 
-header nav{
+ nav{
   padding-top: 20px;
-  display: none;
 }
 
 #burguer{
-   
-    align-self: flex-end;
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
+    display: none;
+}
 
-}
-#burguer:hover{
-    background-color: var(--cor3);
-    color: var(--cor4);
-    border-radius: 8px;
-}
 .menu ul{
-  list-style-type: none;
-  background-color: #400400;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
 }
-
 .menu span{
-  display: none}
-
-.menu{
-  width: 100%;
-}
+    display: inline;
+    font-weight: bold;
+}   
 
 .menu a{
     display:block;
@@ -95,6 +71,7 @@ header nav{
     text-align: center;
 
 }
+
 .menu a:hover{
     background-color: var(--cor3);
     color: var(--cor4);
@@ -103,20 +80,37 @@ header nav{
     transition: background-color, 0.5s;
 }
 
+#container{
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr 20px;
+  gap: 10px;
+}
+
 main{
   padding-bottom: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+
+  min-width: 320px;
+  max-width: 600px;
+  border-radius: 10px;
+
+  grid-column: 2/3;
+  
 }
 
 main h2{
   padding: 10px;
-  background-color: var(--cor5);
+  background-image: linear-gradient(180deg, #E50E00, #7F0800);
   color:var(--cor4);
   font-family: var(--font);
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
   text-align: center;
   font-size: 1.4em;
+}
+
+#introducao{
+  border-radius: 8px 8px 0px 0px;
 }
 
 main h3{
@@ -155,41 +149,51 @@ main img{
 .lista{
   padding: 10px;
   font-size: 1.1em;
+  list-style: none;
 }
+
 
 .lista li::before{
   content: "♫";
   padding: 10px;
 } 
 
-#descubra{
+#descubra {
   text-align: center;
+  margin-bottom: -10px;
+  position: sticky;
+  top: 20px;
+   align-self: start;
 }
+
 #descubra h4{
-  background-color: var(--cor2);
+  background-image: linear-gradient(180deg, #E50E00, #7F0800);
   color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
   padding: 10px;
+  border-radius: 8px 8px 0px 0px;
 }
 
-#descubra ul{
-  background-color: var(--cor5);
+#descubra  ul{
+  background-image: linear-gradient(180deg, #BF0C00, #E50E00);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+  list-style: none;
+  border-radius: 0px 0px 8px 8px;
+}
 }
 
-#descubra li {
+#descubra  li {
   padding: 7px;
 }
 
-
-#descubra a{
+#descubra  a{
   text-decoration: none;
   color: var(--cor4);
   font-weight: bold;
   display: block;
 }
 
-#descubra a:hover{
+#descubra  a:hover{
   background-color: var(--cor1);
   padding: 7px;
   border-radius: 5px;
@@ -237,4 +241,3 @@ footer a:hover{
   transition: color, 0.5s;
 }
 
-}

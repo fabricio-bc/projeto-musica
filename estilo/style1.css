@@ -72,6 +72,10 @@ header nav{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
 }
 
+.menu span{
+  display: none;
+}
+
 .menu{
   width: 100%;
 }
@@ -94,14 +98,12 @@ header nav{
 
 main{
   padding-bottom: 10px;
- 
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
 
-  
   margin: auto;
   min-width: 320px;
   max-width: 600px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
    
 }
 
@@ -114,6 +116,10 @@ main h2{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
   text-align: center;
   font-size: 1.4em;
+}
+
+#introducao{
+  border-radius: 8px 8px 0px 0px;
 }
 
 main h3{
@@ -152,40 +158,52 @@ main img{
 .lista{
   padding: 10px;
   font-size: 1.1em;
+  list-style: none;
 }
+
 
 .lista li::before{
   content: "♫";
   padding: 10px;
 } 
 
-aside{
+#descubra{
   text-align: center;
+  margin-bottom: -10px;
+
+  margin: auto;
+  min-width: 320px;
+  max-width: 600px;
 }
-aside h4{
+
+#descubra h4{
   background-image: linear-gradient(180deg, #E50E00, #7F0800);
   color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+  padding: 10px;
 }
 
-aside ul{
+#descubra ul{
   background-image: linear-gradient(180deg, #BF0C00, #E50E00);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+  list-style: none;
+  border-radius: 0px 0px 8px 8px;
+}
 }
 
-aside li {
+#descubra li {
   padding: 7px;
 }
 
 
-aside a{
+#descubra a{
   text-decoration: none;
   color: var(--cor4);
   font-weight: bold;
   display: block;
 }
 
-aside a:hover{
+#descubra a:hover{
   background-color: var(--cor1);
   padding: 7px;
   border-radius: 5px;
@@ -233,4 +251,3 @@ footer a:hover{
   transition: color, 0.5s;
 }
 
-}
