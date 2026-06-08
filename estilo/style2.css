@@ -106,7 +106,7 @@ main h2{
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.7em;
 }
 
 #introducao{
@@ -118,7 +118,7 @@ main h3{
   color: var(--cor5);
   font-family: var(--font);
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.288);
-  font-size: 1.3em;
+  font-size: 1.6em;
 
 }
 
@@ -127,7 +127,7 @@ main h4{
   color: var(--cor2);
   font-family: var(--font);
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.288);
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 main p {
@@ -136,7 +136,7 @@ main p {
   text-align: justify;
   hyphens: auto;
   line-height: 1.8em;
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 main img{
@@ -172,6 +172,7 @@ main img{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
   padding: 10px;
   border-radius: 8px 8px 0px 0px;
+  font-size: 1.4em;
 }
 
 #descubra  ul{
@@ -191,6 +192,7 @@ main img{
   color: var(--cor4);
   font-weight: bold;
   display: block;
+  font-size: 1.2em;
 }
 
 #descubra  a:hover{
